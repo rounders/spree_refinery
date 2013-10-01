@@ -1,7 +1,7 @@
 SpreeRefinery
 =============
 
-Introduction goes here.
+This Spree extension allows RefineryCMS 2.1 to be added to a Spree 2.0 project.
 
 Installation
 ------------
@@ -11,6 +11,14 @@ Add spree_refinery to your Gemfile:
 ```ruby
 gem 'spree_refinery'
 ```
+
+RefineryCMS 2.1 currently requires jquery-rails 2.3 while Spree 2.0 requires jquery-rails ~> 3.0.0 so to get around
+this problem you'll need to add the following refinerycms 2.1 branch to your Gemfile:
+
+```ruby
+gem 'refinerycms', github: 'rounders/refinerycms', branch: '2-1-stable-spree-compatible'
+```
+
 
 Bundle your dependencies and run the installation generator:
 
